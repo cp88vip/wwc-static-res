@@ -24,7 +24,7 @@ $(function(){
             // "<li id=\"agentCenter\" data-href='/pc/userCenter/manageinvite.html'><a><i class=\"icon-3\"></i><span>代理中心</span></a></li>",
             // '<li id="customerService" data-href="/pc/userCenter/customerService.html"><a><i class=\"icon-users\"></i><span>客服中心</span></a></li>',
         ];
-        // leftHtml_arr.push("<li id=\"washCode\" data-href='/pc/userCenter/washCode.html'><a><i class=\"iconfonty icon-yue\"></i><span>洗码</span></a></li>");
+        leftHtml_arr.push("<li id=\"washCode\" data-href='/pc/userCenter/washCode.html'><a><i class=\"iconfonty icon-yue\"></i><span>洗码</span></a></li>");
         var userType = _user_.userRole;
         if ((_user_.openChess || sessionStorage.getItem('openChess') == "true") && sessionStorage.getItem('checkTransferAllStatus') != "open") {
             leftHtml_arr.push('<li id="amountConver" data-href="/pc/userCenter/amountConver.html"><a target=\"_blank\"><i class=\"icon-3\"></i><span>额度转换</span></a></li>')

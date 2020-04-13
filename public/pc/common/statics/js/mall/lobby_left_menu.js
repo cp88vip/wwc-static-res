@@ -197,7 +197,7 @@ window._static_const = {
       }, 500);
     }
 }, $(function () {
-    getServiceMethod()
+    // getServiceMethod()
     _lottery_menu.head()
     _lottery_menu.leftMenu()
 });

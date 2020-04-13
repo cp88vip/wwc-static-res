@@ -128,21 +128,29 @@ function confirmOrder() {
 function goBet() {
     if (!isJoinBetting) {
         var touZhuArr = [];
+        var after = $("#times_nums").val() ? $("#times_nums").val() : 1;
         $.each(betLottoryRecord.buyListArr, function (i, recordItem) {
 
-            var item = {},
-                unitFee = "元" == recordItem.mode ? 100 * recordItem.singleZhuMoney : "角" == recordItem.mode ? 10 * recordItem.singleZhuMoney : recordItem.singleZhuMoney;
+            var item = {};
+            if(after > 1) {
+
+                item.remark = '注单追号';
+            } else {
+                item.remark = '购彩大厅'
+            }
+               var unitFee = "元" == recordItem.mode ? 100 * recordItem.singleZhuMoney : "角" == recordItem.mode ? 10 * recordItem.singleZhuMoney : recordItem.singleZhuMoney;
                 item.playId = recordItem.smallPlayType.playId,
                 item.issue = $("#current_issue").text(),
                 // item.rebate = 100 * recordItem.rebate,
                 item.rebate = 0,
                 item.unitFee = unitFee,
                 item.numbers = getBetShowNumbers(recordItem.selArr),
+               
                 touZhuArr.push(item)
         });
         var jsonObj = JSON.stringify(touZhuArr);
         console.log("购彩提交订单：" + touZhuArr), isJoinBetting = !0;
-        var after = $("#times_nums").val() ? $("#times_nums").val() : 1;
+        
         $.ajax({
             type: 'POST',
             url: "/front/bet/betting.do"+"?after="+after,

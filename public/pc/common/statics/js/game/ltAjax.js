@@ -176,6 +176,7 @@ $.fn.lt_ajaxSubmit = function () {
           reward = parseFloat(tempRd.split("%")[0]) / 100;
         }
         //TODO
+        var after = ( $("#times_nums").val() ? $("#times_nums").val() : 1 );
         $.each(projects , function(i){
           var p = projects[i];
           var buycp = {};
@@ -234,6 +235,12 @@ $.fn.lt_ajaxSubmit = function () {
           buycp.numbers = nNums;
           buycp.lotteryName = $.lottery_name;
           buycp.rebate = (parseFloat(p.point)*100).toFixed(2);
+          if (after > 1) {
+
+              buycp.remark = '注单追号';
+          } else {
+              buycp.remark = '购彩大厅'
+          }
           // buycp.playName =p.desc ;
           // buycp.betWinStop = betWinStop;
           // buycp.traIssues = JSON.stringify(tra_issues);
@@ -242,7 +249,7 @@ $.fn.lt_ajaxSubmit = function () {
         var jsonObj = JSON.stringify(list);
         console.log("购彩提交订单：");
         console.log(list);
-        var after = ( $("#times_nums").val() ? $("#times_nums").val() : 1 );
+        
         $.ajax({
             type: 'POST',
             url: "/front/bet/betting.do"+"?after="+after,

@@ -164,7 +164,7 @@ window._home_menu = {
       '</span>' +
       '<span><a id="header_money_refresh" style="margin-left: 5px;"><i class="icon-refresh-icon before-col"></i></a></span>' +
       '<span>&nbsp;|&nbsp;';
-
+    menuStr += "<a onclick=\"__openWin('user_center','/pc/userCenter/washCode.html');\">洗码</a>&nbsp;|&nbsp;";
     menuStr += "<a onclick=\"__openWin('user_center','/pc/userCenter/index.html');\">用户中心</a>&nbsp;|&nbsp;";
     menuStr += "<a onclick=\"__openWin('user_center','/pc/userCenter/deposit.html');\">充值</a>&nbsp;|&nbsp;";
     menuStr += "<a onclick=\"__openWin('user_center','/pc/userCenter/bindbank.html');\">提现</a>&nbsp;|&nbsp;";
@@ -459,29 +459,66 @@ window._home_menu = {
     $(".jc-footer").html('');
     $(".jc-footer").html(footerStr);
   },
+
   // 两边下载浮动标
   getLeftRightDownloadAD: function () {
-    var ADStr = '<div id="_leftAD" class="_float_AD l_AD">' +
-      '<img src="/pc/common/statics/img/home/online-right.png?v=1">' +
-      '<div name="close_btn"></div>';
-    ADStr += "<div class=\"top1_btn\" name=\"_leftAD_service\"><a></a></div>";
-    ADStr += "<div class=\"top2_btn\" name=\"_leftAD_qq\"><a target=\"_blank\"></a></div>";
-    ADStr += '<div class="two_img"><img id="img-apple-float" src=""></div>' +
-      '</div>' +
-      '<div id="_rightAD" class="_float_AD r_AD">' +
-      '<img src="/pc/common/statics/img/home/online-left.png?v=1">' +
-      '<div name="close_btn"></div>';
-    ADStr += "<div class=\"top1_btn\" name=\"_rightAD_service\"><a></a></div>";
-    ADStr += "<div class=\"top2_btn\" name=\"_rightAD_qq\"><a target=\"_blank\"></a></div>";
-    ADStr += '<div class="two_img"><img id="img-android-float" src=""></div>' +
-      '</div>';
+    var serviceHtml = `
+      <div id="_leftAD" class="_float_AD l_AD">
+        <img src="/pc/common/statics/img/home/serviceFloat-header.png">
+
+        <div class="top_btn top_btn_service"></div>
+        <div class="top_btn top_btn_qq"></div>
+        <div class="top_btn top_btn_wechat"></div>
+        <div class="top_btn top_btn_phone"></div>
+
+        <div class="two_img ios-float">
+          <img id="img-apple-float" src="">
+        </div>
+
+        <img class="float-close" src="/pc/common/statics/img/home/serviceFloat-close.png">
+      </div>
+
+      <div id="_rightAD" class="_float_AD r_AD">
+        <img src="/pc/common/statics/img/home/serviceFloat-header.png">
+
+        <div class="top_btn top_btn_service"></div>
+        <div class="top_btn top_btn_qq"></div>
+        <div class="top_btn top_btn_wechat"></div>
+        <div class="top_btn top_btn_phone"></div>
+
+        <div class="two_img android-float">
+          <img id="img-android-float" src="">
+        </div>
+
+        <img class="float-close" src="/pc/common/statics/img/home/serviceFloat-close.png">
+      </div>
+    `
+    // var ADStr = '<div id="_leftAD" class="_float_AD l_AD">' +
+    //   '<img src="/pc/common/statics/img/home/online-right.png?v=1">' +
+    //   '<div name="close_btn"></div>';
+    // ADStr += "<div class=\"top1_btn\" name=\"_leftAD_service\"><a></a></div>";
+    // ADStr += "<div class=\"top2_btn\" name=\"_leftAD_qq\"><a target=\"_blank\"></a></div>";
+    // ADStr += '<div class="two_img"><img id="img-apple-float" src=""></div>' +
+    //   '</div>' +
+    //   '<div id="_rightAD" class="_float_AD r_AD">' +
+    //   '<img src="/pc/common/statics/img/home/online-left.png?v=1">' +
+    //   '<div name="close_btn"></div>';
+    // ADStr += "<div class=\"top1_btn\" name=\"_rightAD_service\"><a></a></div>";
+    // ADStr += "<div class=\"top2_btn\" name=\"_rightAD_qq\"><a target=\"_blank\"></a></div>";
+    // ADStr += '<div class="two_img"><img id="img-android-float" src=""></div>' +
+      // '</div>';
     // 加新消息
     var msn = '<div id="_msn" class="_float_msn _float_AD r_AD animated infinite bounce" style="display:none;">' +
       '<img src="/pc/common/statics/img/home/msn.png?">' +
       '<div name="msn_close_btn"></div>' +
       '<div name="msn_tint" class="msn_tint"></div>' +
       '</div>';
-    $('body').append(ADStr + msn);
+    $('body').append(serviceHtml + msn);
+    // $('.top_btn').on('click', function() {
+    //   if (!$(this).children($('.top_btn_alert')).length && !$(this).hasClass('top_btn_service')) {
+    //     _alert('该客服通道正在建设中，请尝试使用其他客服方式。为您带来不便敬请谅解。')
+    //   }
+    // })
   },
   //@ parem  domSelector  : 一个dom选择器，  获得游戏列表(主页等彩票列表)
   getGameList: function (domSelector, list) {
@@ -975,6 +1012,82 @@ window._home_menu = {
   },
   // 请求客服方式+请求下载二维码
   getServiceMethod: function () {
+    Utils.request('game/getCustomer.do', {}, function(res) {
+      if (res.code === 0) {
+        var copyContact = function(event) {
+          var contactText = event.target.dataset.contact
+          
+          var divEle = document.createElement('div')
+          divEle.append(contactText)
+          document.body.appendChild(divEle)
+
+          var range = document.createRange()
+          range.selectNode(divEle)
+          window.getSelection().removeAllRanges()
+          window.getSelection().addRange(range)
+          
+          try {
+            document.execCommand('copy')
+            _alert('复制成功')
+          } catch (error) {
+            console.error('复制客服联系方式报错：', error)
+          } finally {
+            document.body.removeChild(divEle)
+          }
+        }
+
+        Utils.saveStorage({ serviceUrl: res.data.other })
+        $('.top_btn_service').on('click', function() {
+          window.open(res.data.other)
+        })
+
+        var itemList = []
+
+        res.data.data.forEach(d => {
+          var itemsHtml = document.createElement('div')
+          var itemHeader = document.createElement('div')
+          itemsHtml.className = 'top_btn_alert'
+          itemHeader.className = 'top_btn_alert_item_header'
+
+          d.links.forEach(l => {
+            $(itemsHtml).append(
+              `
+                <div class="top_btn_alert_item">
+                  <span>${l.name}</span>
+                  <span class="top_btn_alert_item_contact">${l.contact}</span>
+                  <img class="contact-copy" data-contact="${l.contact}" src="/pc/common/statics/img/home/copy.png" />
+                </div>
+              `
+            )
+          })
+
+          switch (d.type) {
+            case 'qq':
+              itemHeader.append('QQ客服')
+              itemsHtml.prepend(itemHeader)
+              itemList.push(itemsHtml)
+              $('.top_btn_qq').append(itemList).show()
+              break
+            case 'weChat':
+              itemHeader.append('微信客服')
+              itemsHtml.prepend(itemHeader)
+              itemList.push(itemsHtml)
+              $('.top_btn_wechat').append(itemList).show()
+              break
+            case 'hotLine':
+              itemHeader.append('电话客服')
+              itemsHtml.prepend(itemHeader)
+              itemList.push(itemsHtml)
+              $('.top_btn_phone').append(itemList).show()
+              break
+          }
+
+          itemList = []
+        })
+
+        $('.contact-copy').on('click', copyContact)
+      }
+    })
     Utils.request('front/homepage/get_sidebar_config.do', {}, function (res) {
       if (res.code == 0) {
         $('#_leftAD [name=_leftAD_service]').find('a').attr('target', '_blank');
@@ -1002,19 +1115,20 @@ window._home_menu = {
               $("#img-apple").attr('src', item.value);
               $("#img-apple-float").attr('src', item.value);
               $("#img-apple-footer").attr('src', item.value);
-            } else if (item.remark.indexOf("ONLINE_QQ_SERVICE") > -1) {
-              if (item.remark === 'LEFT_ONLINE_QQ_SERVICE') {
-                // 左侧QQ
-                $('#_leftAD .top2_btn').find('a').attr('href', item.value);
-              } else if (item.remark === 'RIGHT_ONLINE_QQ_SERVICE') {
-                // 右侧QQ 可以不一样
-                $('#_rightAD .top2_btn').find('a').attr('href', item.value);
-              } else {
-                // 同一个链接
-                $('#_leftAD .top2_btn').find('a').attr('href', item.value);
-                $('#_rightAD .top2_btn').find('a').attr('href', item.value);
-              }
-            }
+            } 
+            // else if (item.remark.indexOf("ONLINE_QQ_SERVICE") > -1) {
+            //   if (item.remark === 'LEFT_ONLINE_QQ_SERVICE') {
+            //     // 左侧QQ
+            //     $('#_leftAD .top2_btn').find('a').attr('href', item.value);
+            //   } else if (item.remark === 'RIGHT_ONLINE_QQ_SERVICE') {
+            //     // 右侧QQ 可以不一样
+            //     $('#_rightAD .top2_btn').find('a').attr('href', item.value);
+            //   } else {
+            //     // 同一个链接
+            //     $('#_leftAD .top2_btn').find('a').attr('href', item.value);
+            //     $('#_rightAD .top2_btn').find('a').attr('href', item.value);
+            //   }
+            // }
           }
         }
         if (isThird) {
@@ -1055,6 +1169,7 @@ window._home_menu = {
     }, function () { }, true);
   }
 };
+
 try {
   //下面是静态资源url的前缀
   if (typeof (_prefixURL) != "object") {
@@ -1179,6 +1294,9 @@ $(function () {
       }
     }
   });
+  $('.float-close').on('click', function () {
+    $(this).parent().hide()
+  })
   // 浮动标关闭
   $("#_leftAD [name=close_btn],#_rightAD [name=close_btn]").click(function () {
     $(this).parent().hide();
