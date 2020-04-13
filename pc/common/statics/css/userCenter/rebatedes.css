@@ -1,0 +1,265 @@
+.rebateDes {
+    width: 1230px;
+    min-height: calc(100vh - 20px);
+    background: #fff;
+    margin: 10px auto;
+}
+
+.rebateNav {
+    background: linear-gradient(90deg, #56585f, #68686e 50%, #4b4e56);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56585f", endColorstr="#4b4e56", GradientType=0);
+    height: 65px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.banner .hd ul:after,
+.banner .hd ul:before,
+.bonusTable ul:after,
+.bonusTable ul:before,
+.fix:after,
+.fix:before,
+.safeList li:after,
+.safeList li:before,
+.winnerList li:after,
+.winnerList li:before {
+    content: "";
+    display: table;
+}
+
+.rebateNav a:first-child {
+    left: 20;
+    z-index: 9;
+}
+
+.rebateNav a:nth-child(2) {
+    left: 135px;
+    z-index: 8;
+}
+
+.rebateNav a:nth-child(3) {
+    left: 250px;
+    z-index: 7;
+}
+
+.rebateNav a:nth-child(4) {
+    left: 365px;
+    z-index: 6;
+}
+
+.rebateNav a:nth-child(5) {
+    left: 480px;
+    z-index: 5;
+}
+
+.rebateNav a:nth-child(6) {
+    left: 595px;
+    z-index: 4;
+}
+
+.rebateNav a:nth-child(7) {
+    left: 710px;
+    z-index: 3;
+}
+
+.rebateNav a:nth-child(8) {
+    left: 825px;
+    z-index: 2;
+}
+
+.rebateNav a:nth-child(9) {
+    left: 940px;
+    z-index: 1;
+}
+
+.rebateNav a:nth-child(10) {
+    left: 1055px;
+    z-index: 0;
+}
+
+.rebateNav a {
+    width: 143px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    background: url(/pc/common/statics/img/userCenter/rebateBtn.ba5f9c8.png) no-repeat;
+    top: 21px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+    text-shadow: 1px 1px 0 #c3c3c3;
+    cursor: pointer;
+}
+
+.rebateNav .curr {
+    background: url(/pc/common/statics/img/userCenter/rebateBtnChecked.c0ad49b.png) no-repeat;
+    z-index: 99!important;
+}
+
+:after,
+ :before,
+ :focus {
+    outline: none;
+}
+
+.testShow {
+    margin: 16px auto -10px 20px;
+}
+
+.rebateContent {
+    padding: 20px;
+    position: relative;
+}
+
+.rebateContent ul {
+    width: 160px;
+    float: left;
+}
+
+.rebateTitle {
+    border-left: 1px solid #ddd;
+    font-weight: 700;
+}
+
+.rebateTitle li:first-child {
+    position: relative;
+}
+
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rebateContent ul li {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.rebateTitle li {
+    width: 100%!important;
+    border-right: 1px solid #ddd;
+}
+
+.rebateTitle li:first-child:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 40px solid #ddd;
+    border-right: 144px solid transparent;
+    content: "";
+    z-index: 1;
+}
+
+.rebateTitle li:first-child i {
+    position: absolute;
+    left: 15px;
+    bottom: -6px;
+    z-index: 2;
+}
+
+.rebateTitle li:first-child em {
+    position: absolute;
+    right: 15px;
+    top: -6px;
+    z-index: 2;
+}
+
+.rebateTitle li:first-child:after {
+    position: absolute;
+    left: 0;
+    right: 1px;
+    top: 1px;
+    bottom: 0;
+    border-bottom: 39px solid #fff;
+    border-right: 140px solid transparent;
+    content: "";
+    z-index: 1;
+}
+
+.rebateTableCon {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.rebateTableCon i {
+    right: 21px;
+}
+
+.rebateTableCon em {
+    left: 148px;
+}
+
+.rebateTableCon em,
+.rebateTableCon i {
+    position: absolute;
+    width: 21px;
+    height: 40px;
+    top: 21px;
+    cursor: pointer;
+    background: #f8f8f8;
+    z-index: 2;
+    display: none;
+}
+
+.rebateContent .isClass {
+    position: relative;
+}
+
+.rebateTable ul {
+    width: 102px;
+}
+
+.rebateContent .isClass li:first-child {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.rebateTableCon li:first-child {
+    background: #f8f8f8;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rebateTable ul li {
+    border-right: 1px solid #ddd;
+}
+
+.rebateContent .mixLine li:first-child:before {
+    content: "\5C55\5F00";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.rebateContent ul li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.noneed {
+    display: none;
+}
+
+.minx .mixLine li:first-child:before {
+    content: "\6536\56DE";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}

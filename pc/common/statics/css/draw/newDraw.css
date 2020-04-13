@@ -1,0 +1,390 @@
+.luck-number-head{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0px;
+}
+
+.luck-number-list{
+  display: flex;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #f13131;
+}
+
+.luck-number-list > li{
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 38px;
+  cursor: pointer;
+  border-right: 1px solid #ececec;
+}
+
+.luck-number-list > li.active{
+  background-color: #f13131;
+  color: #ffffff;
+}
+
+
+.luck-number-content{
+  display: flex;
+  padding: 10px 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ececec;
+}
+
+.luck-number-content .luck-number-item{
+  white-space: nowrap;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+.luck-number-item.active {
+  background-color: #eee;
+  color: #ffffff;
+}
+
+.luck-number-tabel {
+  width: 100%;
+}
+
+.luck-number-tabel > thead > tr{
+  background-color: #eee;
+  color: #666;
+}
+
+.luck-number-tabel > thead > tr > th {
+  padding: 8px;
+  /* border-right: 1px solid #fff; */
+}
+
+.luck-number-tabel > tbody > tr > td {
+  /* border-right: 1px solid #fff; */
+  text-align: center;
+}
+
+.luck-number-tabel > tbody > tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.number-wrap{
+  display: inline-block;
+}
+
+.touzi-images {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: 100% !important;
+  margin: 5px;
+  /* margin-top: 10px; */
+}
+
+.touziBox1{
+  background:url('/pc/common/statics/img/draw/touzi1.png')no-repeat;
+}
+
+.touziBox2{
+  background:url('/pc/common/statics/img/draw/touzi2.png')no-repeat;
+}
+
+.touziBox3{
+  background:url('/pc/common/statics/img/draw/touzi3.png')no-repeat;
+}
+
+.touziBox4{
+  background:url('/pc/common/statics/img/draw/touzi4.png')no-repeat;
+}
+
+.touziBox5{
+  background:url('/pc/common/statics/img/draw/touzi5.png')no-repeat;
+}
+.touziBox6{
+  background:url('/pc/common/statics/img/draw/touzi6.png')no-repeat;
+}
+
+.pcdd-images , .quanquan-images{
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+  background: url('/pc/common/statics/img/draw/red.png');
+  background-size: 100% !important;
+  margin: 10px 4px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+}
+
+
+.td-flex{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 16px;
+}
+
+.zst-icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tz-button{
+  border: 1px solid #ffc600;
+  background-color: #ffc600;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 4px 8px;
+}
+
+.q-hezhi{
+  color: #f13131;
+}
+
+
+.pcdd-images-hz {
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+  background: url('/pc/common/statics/img/draw/blue.png');
+  background-size: 100% !important;
+  margin: 10px 4px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+}
+
+.dxds-open{
+  color: #ff9000;
+  margin-right: 4px;
+}
+
+.dxds-off {
+  color: #0d7cff;
+  margin-right: 4px;
+}
+
+
+.mgnew{
+  margin-right: 4px;
+}
+.lhc-images{
+  width: 30px;
+  height: 32px;
+  display: inline-flex;
+  background-size: 100% !important;
+  margin: 10px 4px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 29px;
+  order: 1;
+  flex-direction: column;
+  min-height: 60px;
+}
+
+.lhc-images > span:nth-child(2) {
+  color: #333;
+  font-weight: normal;
+}
+
+.lhcBox-blue{
+  background: url('/pc/common/statics/img/draw/blue.png')no-repeat;
+}
+
+.lhcBox-red{
+  background: url('/pc/common/statics/img/draw/red.png')no-repeat;
+}
+
+.lhcBox-green{
+  background: url('/pc/common/statics/img/draw/green.png')no-repeat;
+}
+
+.lhcBox-huise{
+  background: url('/pc/common/statics/img/draw/huise.png')no-repeat;
+}
+
+.lhc-order{
+  order: 2;
+}
+
+.pk10-images{
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+  display: inline-flex;
+  margin: 10px 4px;
+  font-size: 16px;
+  flex-direction: column;
+  min-height: 60px;
+  text-align: center;
+}
+
+.pk10-images > span:nth-child(1) {
+  background-color: #b4b4b4;
+  box-shadow: 0px 2px 5px #a0a0a0;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.pk10-images > span:nth-child(2) {
+  color: #333;
+  white-space: nowrap;
+}
+
+.pk10-01{
+  background-color: #fcd400!important;
+}
+.pk10-02{
+  background-color: #009ae9!important;
+}
+.pk10-03{
+  background-color: #09365b!important;
+}
+.pk10-04{
+  background-color: #ff7c00!important;
+}
+.pk10-05{
+  background-color: #00d3d1!important;
+}
+.pk10-06{
+  background-color: #6063ea!important;
+}
+.pk10-07{
+  background-color: #b4b4b4!important;
+}
+.pk10-08{
+  background-color: #fa1e08!important;
+}
+.pk10-09{
+  background-color: #5c0000!important;
+}
+.pk10-10{
+  background-color: #65b700!important;
+}
+
+.luck-number-head h1{
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.luck-number-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new-luck-number-info{
+  margin-left: 10px;
+}
+
+.luck-number-date{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.luck-number-date li{
+  flex: 1;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  cursor: pointer;
+  padding: 4px 14px;
+  margin-right: 10px;
+}
+
+.luck-number-date li:hover {
+  background-color: #ea721a;
+  color: #fff;
+}
+
+.luck-number-date:nth-child(2) {
+  margin-left: auto;
+}
+
+.luck-number-date-con{
+  display: inline-flex;
+  align-items: center;
+}
+
+.luck-number-date-con > span {
+  margin-right: 6px;
+}
+
+#dates{
+  border: 1px solid #ccc;
+  min-height: 27px;
+  width: 120px;
+  border-radius: 4px;
+  text-align: center;
+  background: url(/pc/common/statics/img/temp/calendar.jpg) no-repeat scroll 18px 6px #fff;
+  padding-left: 10px;
+}
+
+.nav-icon{
+  width: 28px;
+  height: 28px;
+  margin-right: 4px;
+}
+
+.new-luck-number{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 4px;
+}
+
+.date-active{
+  background-color: #ea721a;
+  color: #fff;
+}
+
+
+.footballData-th{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footballData-th > span:nth-child(1){
+  flex-basis: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footballData-th > span:nth-child(6) {
+  border-right: none;
+}
+
+.footballData-th > span{
+  flex: 1;
+  border-right: 1px solid #ffffff;
+  padding: 8px;
+}
+
+.footballData-tabel thead tr th{
+  border-right: 1px solid #ffffff;
+}
+
+.footballData-tabel tbody tr td{
+  padding: 12px;
+}
+
+.zheng{
+  color: #ff3300;
+}
+
+.fu{
+  color: #1fa946;
+}

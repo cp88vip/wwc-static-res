@@ -1,0 +1,29 @@
+
+.help-left { width:682px; float: left; }
+.help-right { width:300px; float: right }
+.help-box { background: #fff; border:1px solid #ececec; overflow: hidden; margin:10px 0; }
+.help-tit { height:47px; line-height: 47px; color: #333; border-bottom: 1px solid #ececec; padding:0 15px; font-size: 16px; overflow: hidden;  }
+.help-tit .icon-ALARM, .help-tit .icon-TIME {color:#fc9721;line-height: 49px;font-size: 22px;}
+.help-tit .fr { font-size: 12px; }
+.help-info { padding:20px; position: relative;}
+
+.help-cent { position: relative;  }
+.help-line { background: #ddd; width:5px; height: 90%; position: absolute; left: 38px; top: 18px; bottom:10px; }
+.help-icon { background:#fc9721; width:22px; height: 22px;  border:2px solid #fff; border-radius: 50%; text-align: center; display: block; position: absolute; top:10px; left: 7px; color: #fff;}
+.helpetin-left span { font-size: 14px; position: absolute; left: 40px; top: 12px; color: #333; }
+.helpetin-right { margin:4px 0 0 72px;  padding: 14px 0 0 5px; }
+
+.help-list ul li { line-height:44px; border-bottom: 1px solid #ececec; padding-left: 20px;  }
+.help-list ul li .f16 { font-size: 16px; margin-right: 10px; }
+
+.help-title { line-height:36px; color: #333; font-size: 16px; font-weight: normal;  }
+.help-table ul li{cursor: pointer;; font-size: 14px; width:135px; height: 45px; line-height: 45px; text-align: center; float: left; border:1px solid #ececec; border-width: 0 1px 1px 0 }
+.help-cai { color: #fc9721; }
+.help-cai span { float: left; margin:-2px 10px 0 0; }
+
+.help-right .help-list ul li { line-height: 40px; }
+
+
+.help-wrap { background: #fff; margin:10px 0; padding:10px 30px; line-height: 24px; }
+.help-wrap h3 { font-size: 18px; color: #fc9721; }
+.help-wrap-tit { color: #333; font-size: 14px; margin:15px 0 0; }

@@ -1,0 +1,187 @@
+/* 通用设置 */
+*{
+  margin: 0;
+  padding: 0;
+  font: 'Microsoft YaHei', 'Arial','宋体','sans-serif';
+  font-family: '宋体';
+}
+a, a:hover{
+  text-decoration: none;
+}
+ul, li, ol{
+  list-style: none;
+}
+
+.text-red {
+  color: #ff8700;
+}
+
+.form-div label {
+  font-size: 14px;
+  color: #000;
+  line-height: 40px;
+  height: 40px;
+  font-weight: normal !important;
+}
+.form-div .inline {
+  width: 60px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #000;
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  line-height: 40px;
+  height: 40px;
+}
+.form-div input {
+  font-size: 14px ;
+  color: #000 ;
+  display: inline-block ;
+  /*text-align: left;*/
+  white-space: nowrap ;
+  text-overflow: ellipsis ;
+  vertical-align: middle ;
+  line-height: 30px ;
+  height: 30px ;
+  padding: 3px 5px ;
+  border-radius: 3px ;
+  border: 1px solid #bfbfbf;
+  margin: auto;
+  margin-right: 3px;
+}
+.form-div .inputTitle {
+  width: 370px ;
+  display: inline-block ;
+}
+.form-div #sub-description {
+  vertical-align: top;
+  margin-top: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 14px;
+}
+
+/*时间*/
+.form-div .sub-dis {
+  padding: 10px;
+  background-color: #f5f7fa;
+  margin-top: 10px;
+  display: block;
+}
+.form-div .sub-dis input {
+  width: 150px !important;
+  float: none !important;
+}
+.form-div .sub-distime {
+  /*height: 80px;*/
+  line-height: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
+.form-div .subtime-tint {
+  padding: 0 3px;
+}
+.form-div .input-group select {
+  margin: 0 5px;
+  width: auto !important;
+}
+/*用户*/
+.form-div .userlist {
+  padding: 10px;
+  background-color: #f5f7fa;
+  margin-top: 10px;
+  display: block;
+}
+/* 展示 */
+.form-div .userlist-tintdiv button {
+  /*width: 80px;*/
+  height: 25px;
+  border-radius: 3px;
+  border:1px solid #000;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  margin-right: 10px;
+}
+.form-div .seldislist {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+.form-div .seldislist li {
+  text-overflow: ellipsis;
+  text-align: center;
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 2px;
+  border:1px solid #000;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.form-div .seldislist li a{
+  font-size: 14px;
+  color: #000;
+}
+
+/* 选择 */
+.form-div #selInput {
+  background-color: #ff8700;
+  color: #fff;
+  border-color: #fff;
+}
+.form-div .seluserlist {
+  background-color: #fff;
+  margin-top: 10px;
+  /*width: 200px;*/
+}
+.form-div .seluserlist ul{
+  background-color: #fff;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+.form-div .seluserlist li {
+  margin-left: 10px;
+  width: 40%;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.form-div .seluserlist li #userid {
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+.form-div .seluserlist li #userid i {
+  display: inline-block;
+}
+.form-div .seluserlist li a span {
+  margin-right: 10px;
+}
+.form-div .seluserlist button {
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+  color: #ff8700;
+  border:1px solid #ff8700;
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+/* 按钮 */
+.btn-div {
+  margin-top: 10px;
+}
+.btn-div button {
+  width: 50px;
+  height: 30px;
+  border-radius: 3px;
+  border:1px solid #000;
+  margin-bottom: 10px;
+}

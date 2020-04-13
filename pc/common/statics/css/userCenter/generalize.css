@@ -1,0 +1,76 @@
+.generalize_top {
+  color: #ffcf2e;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.generalize_middle{
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+}
+.generalize_middle .my_account {
+  flex: 1;
+}
+.generalize_middle .my_account span {
+  color: #ffcf2e;
+}
+.generalize_middle .recommand_account {
+  flex: 1;
+}
+.generalize_middle .recommand_account span {
+  color: #ffcf2e;
+}
+.generalize_bottom {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.generalize_bottom .item {
+  flex: 0 0 40%;
+  padding: 10px 5px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+}
+.generalize_table {
+  margin: 10px 80px;
+}
+.directagent_table{
+  margin: 10px 2px;
+}
+.directagent_table table {
+  font-size: 12px !important;
+  margin-top: 10px;
+}
+.directagent_table table th {
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid rgb(234,114,26);
+}
+.directagent_table table td {
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid rgb(234,114,26);
+}
+.table_title {
+  color: #ffcf2e;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #ffcf2e;
+}
+.generalize_table table {
+  margin-top: 10px;
+  font-size: 16px !important;
+}
+.generalize_table table th {
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px dashed rgb(234,114,26);
+}
+.generalize_table table tr {
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px dashed rgb(234,114,26);
+}

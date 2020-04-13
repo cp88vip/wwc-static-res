@@ -1,0 +1,122 @@
+.user-info {
+  cursor: pointer;
+}
+#userInfoLists{
+  /* display: none; */
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+.hint-info {
+  position: absolute;
+  bottom: 10px;
+  color: red;
+}
+.select-avatar {
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  background-color: #fff;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 0 40px;
+}
+.select-avatar .avatar-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 800px;
+}
+.select-avatar .avatar-bottom span {
+  width: 80px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: aquamarine;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+}
+.select-avatar .box {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 240px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.select-avatar .box .avatar-unit {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+}
+.select-avatar .box .avatar-unit img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; 
+}
+.select-avatar .box .avatar-unit img.selected {
+  border: 4px solid red;
+}
+#userInfoLists .user-left {
+  flex: 0 0 350px;
+}
+#userInfoLists .user-left ul li > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#userInfoLists .user-left ul li > span {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+}
+#userInfoLists .user-right ul li > span {
+  display: inline-block;
+  width: 120px;
+}
+#userInfoLists .user-right ul li > span:nth-last-child(1) {
+  display: inline-block;
+  width: 200px;
+}
+#userInfoLists .user-right ul li > div,#userInfoLists .user-left ul li > div {
+  width: 220px;
+  float: right;
+}
+#userInfoLists .user-right ul li > div input,#userInfoLists .user-left ul li > div input {
+  width: 150px;
+  height: 30px;
+}
+#userInfoLists .user-right ul li > div span,#userInfoLists .user-left ul li > div span {
+  width: 50px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: aquamarine;
+  border-radius: 3px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+#userInfoLists .user-right {
+  flex: 0 0 350px;
+}
+#userInfoLists ul li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #222222;
+}

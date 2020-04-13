@@ -1,0 +1,61 @@
+/* quill的样式 */
+.quill-link {
+    margin: -5px;
+}
+
+.quill-link .quill-menu {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.quill-link .quill-menu a {
+    display: inline-block;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    margin-right: 8px;
+}
+
+.quill-link .quill-menu a.active {
+    background-color: #2e8ded;
+    border: 1px solid #4898d5;
+    color: #fff;
+}
+
+.quill-link .link-tips {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+
+.quill-link .link-title {
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.quill-link .quill-box {
+    display: none;
+}
+
+.quill-link .quill-box.active {
+    display: block;
+}
+
+.quill-link .link-select {}
+
+.modal-self {
+    display: none;
+    z-index: 1020;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}

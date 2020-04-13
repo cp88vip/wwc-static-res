@@ -1,0 +1,23 @@
+{
+    "code":0,
+    "total": 100,
+    "rows":[
+        {
+            "id":1,
+            "account":"lilei8",
+            "type":1,
+            "beforeNum":100,
+            "betNum":10,
+            "afterNum":110,
+            "changedTime":"2018-03-10 12:00:00",
+            "beforeDrawNeed":500,
+            "drawNeed":0,
+            "afterDrawNeed":500,
+            "operator":"admin",
+            "remark":"手工加款，原因：送钱"
+        }
+    ],
+    "msg":"ok",
+    "system_time":1519904232543,
+    "version":"2.0.0"
+}

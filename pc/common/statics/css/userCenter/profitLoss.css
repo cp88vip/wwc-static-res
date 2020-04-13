@@ -1,0 +1,115 @@
+.bonusTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px !important;
+}
+.bonusTable .unit {
+  flex: 0 0 320px;
+  height: 100px;
+  border: 1px solid #dddddd;
+  border-radius: 10px; 
+  margin-left: 8px;
+}
+.bonusTable .unit:first-child{
+  margin-left: 0;
+}
+.bonusTable .unit2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bonusTable .unit2 .left {
+  flex: 0 0 60px;
+}
+.bonusTable .unit2 .right {
+  flex: 0 0 230px;
+}
+.bonusTable .unit2 .right .num {
+  font-size: 24px;
+  color: rgb(228, 57, 60);
+  line-height: 40px;
+}
+.bonusTable .unit2 .right .num2 {
+  color: rgb(228, 57, 60);
+  line-height: 40px;
+}
+.bonusTable .unit .top {
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 26px;
+  color: rgb(228, 57, 60);
+}
+.bonusTable .unit .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bonusTable .unit .bottom .li a {
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.icon-coin-dollar:before {
+  color: #1a1a1a;
+  margin-right: 3px;
+}
+.userTip2 {
+  border: 1px solid #f8e2b9;
+  padding: 0 5px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 30px 10px;
+}
+.userTip2 .list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.userTip2 .list .unit {
+  text-align: center;
+  height: 100px;
+  position: relative;
+  flex: 1;
+}
+.userTip2 .list .unit::after {
+  content: '';
+  position: absolute;
+  left: auto;
+  top: auto;
+  bottom: 10px;
+  right: 0;
+  height: 80%;
+  width: 1px;
+  background-color: #f8e2b9;
+}
+.userTip2 .list .unit:last-child::after {
+  width: 0;
+}
+.userTip2 .list .unit .top {
+  font-size: 18px;
+  line-height: 61px;
+}
+.userTip2 .list .unit .bottom span {
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+.right-div .share {
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #ff9835;
+  /* float: right; */
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+#JS_blockPage {
+  top: 10%;
+}
+.roomback {
+  background-color: aqua;
+}

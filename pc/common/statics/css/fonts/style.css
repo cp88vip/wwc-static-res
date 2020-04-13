@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?b91ihn');
+  src:  url('fonts/icomoon.eot?b91ihn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b91ihn') format('truetype'),
+    url('fonts/icomoon.woff?b91ihn') format('woff'),
+    url('fonts/icomoon.svg?b91ihn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-billiard-ball:before {
+  content: "\e90a";
+}
+.icon-coin-pound:before {
+  content: "\1f369";
+  color: #fff;
+}
+
+.icon-coin-dollar:before {
+  content: "\e93b";
+  color: #fff;
+}
+.icon-coin-yen:before {
+  content: "\e93e";
+  color: #fff;
+}
+.icon-credit-card:before {
+  content: "\e93f";
+  color: #fff;
+}
+.icon-appleinc:before {
+  content: "\eabe";
+  color: #d81e06;
+}
+.icon-android:before {
+  content: "\eac0";
+  color: #26ab5f;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-users:before {
+  content: "\e972";
+  color:#fff;
+}
+.icon-link:before {
+  content: "\e9cb";
+  color: #fff;
+}
+.icon-acc:before {
+  content: "\e915";
+  color:#333;
+}
+.icon-10:before {
+  content: "\e914";
+}
+.icon-3:before {
+  content: "\e909";
+}
+.icon-4:before {
+  content: "\e90b";
+}
+.icon-6:before {
+  content: "\e90c";
+}
+.icon-7:before {
+  content: "\e90d";
+}
+.icon-Book---lines:before {
+  content: "\e90e";
+}
+.icon-Home:before {
+  content: "\e90f";
+}
+.icon-Notes:before {
+  content: "\e910";
+}
+.icon-Shape-47:before {
+  content: "\e911";
+}
+.icon-ALARM:before {
+  content: "\e912";
+}
+.icon-TIME:before {
+  content: "\e913";
+}
+.icon-star-icon:before {
+  content: "\e900";
+}
+.icon-hall-icon:before {
+  content: "\e901";
+}
+.icon-time-icon:before {
+  content: "\e902";
+}
+.icon-refresh-icon:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-down-icon:before {
+  content: "\e904";
+}
+.icon-iphone-icon:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-lock-icon:before {
+  content: "\e906";
+}
+.icon-attr-down:before {
+  content: "\e907";
+}
+.icon-attr-up:before {
+  content: "\e908";
+}
+
+/* 余额宝字体 */
+@font-face {font-family: "iconfont";
+  src: url('./fonts/iconfont1.eot?t=1567234316212'); /* IE9 */
+  src: url('./fonts/iconfont1.eot?t=1567234316212#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPIAAsAAAAAB+QAAAN8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqDcIMpATYCJAMICwYABCAFhG0HLRvMBlFULVpkPwrjtiUc4ZDMHmHh2Znzavaub+k3ZTx87cf+3N3FRCJRNIsmMolQCFGsZEK2xBAyodj/Jbz9X9MU2Jg8X5anSqTQH+QfcC4lR5vTU2YTchVucgN6WjAppGvmJeHmK6SZxKuez/67wP+5nN41xOcHymmOjUe9AOOtge6BawHGBRKYN4xdtRQHtZ1Ao1FNud3ZZg9VBe4XiEvX1qGaUSkN2aFeqK2YWsSTGvXpOn0Dj8H3479+VElqMpx3cDG1YPAtJXH5Xt2dCwR7OgPUWWQsA4U4qTTtKUShZQWNdqhoEmwrO/iWVpVgbfaPRxC1cGYzGIasa2IzzqVmJlBg6zM+B52IMtB2+nCtANkQCLZz2XtPSU+xp48a0uxzwH3Ky0sKBLEhbqkcXuGMaBXe6KWKA7SxgPlryTAXhkFoqdfrIe6CUH/huXdW9vyczAFXboQzDsv7rDYdcJ28a+QhjwH9rm5VPnbFB1mPj4mPSaYnLXnuJealum2xZYkNIlC/hRUuEoRXWpcBIJCnwCLQxkpM1rewsJOAdiuLF1LmhP2rCUYIXy4Zs5jGMXkYQ37hzN9sDNPEmH69envWGXJDgijHJbtWdEPyqDp2WFL3X+OMlAzHqkdL6lHW3eIRGi2YWYemuiqpel/K+JE5REtDdlD86+/YOXb5V+44FDE130KwpPYc9m1BSc170EI0RybKFHokMp5aLJi86AErUaPi0/qoSqnSnupFVVmVFK8Ue8ZMTdEECTFJWUsizYJxybGJI2LX0JycGdN2hsYdBgDVQ37n+y/8jXi5+sihrv7XNwr46tGaA0f1UKCbhfobNQc/jN2xpDhcLE1PzkLm5DnFiPrQqBEVbOv0HmrpAYkh1GtsCEmdEcjqTaOFuAw1mqxArXob0GjJfHaTLqwgSgMWfQII7b4gafUOWbsftBB/oUavP6jVHgVodBZdSzaZDbe+w6QLWWjc0DXjSFGt1MPsLdmnQOc0NyAdiTPXiz0Hp3x0ThHxFCOys90XUag4DnEGdqMgiDHh2CNT2o5IonUci6uu1DbjEOp2MKITxIIMN8hlikWUqCzqhc9vEdtJQMcNmDb9EWEZt33U09btgM5FUSfMreyTObP1CaEghcVCaAYMJCChGEqqO3mISbQ5AwIJTQeVU11F7eUl4dutgkZYnoIUZfnqRAA=') format('woff2'),
+  url('./fonts/iconfont1.woff?t=1567234316212') format('woff'),
+  url('./fonts/iconfont1.ttf?t=1567234316212') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./fonts/iconfont1.svg?t=1567234316212#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfonty {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yue:before {
+  content: "\e61f";
+}
+
+
